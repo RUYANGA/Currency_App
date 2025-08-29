@@ -7,7 +7,22 @@ class CurrencyConvert extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Currency Converter')),
-      body: const Center(child: Text('Welcome to the Currency Converter!')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "Currency",
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.deepPurpleAccent,
+              ),
+            ),
+            Text("0", style: TextStyle(fontSize: 48)),
+          ],
+        ),
+      ),
     );
   }
 }
