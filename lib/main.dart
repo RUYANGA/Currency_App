@@ -4,14 +4,16 @@ void main() {
   runApp(const MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      'Hello, World!',
-      textDirection: TextDirection.rtl);
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Hello Flutter')),
+        body: const Center(child: Text('Welcome to Flutter!')),
+      ),
+    );
   }
 }
