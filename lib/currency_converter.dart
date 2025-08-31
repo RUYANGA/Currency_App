@@ -33,11 +33,17 @@ class CurrencyConvert extends StatelessWidget {
             ),
             TextField(
               decoration: InputDecoration(
+                suffixIcon: Icon(Icons.currency_exchange, size: 30,color: Colors.black,),
                 border: OutlineInputBorder(),
                 labelText: 'Amount',
-                hintText: 'Enter Amount',
+                hintText: 'Enter Amount', 
                 hintStyle: TextStyle(fontSize: 20,color: Colors.black),
                 labelStyle: TextStyle(fontSize: 22,color: Colors.black),
+                filled: true,
+                fillColor: const Color.fromARGB(255, 253, 252, 252),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.green),
+                ),
               ),
             ),
             TextButton(onPressed: (){}, child: Text('Change',
