@@ -25,9 +25,15 @@ class _CurrencyConvertState extends State<CurrencyConvert> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'Frw $result',
-              style: const TextStyle(fontSize: 48, fontWeight: FontWeight.bold),
+            Padding(
+              padding: const EdgeInsets.all(22.0),
+              child: Text(
+                'Frw $result',
+                style: const TextStyle(
+                  fontSize: 48,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(22.0),
